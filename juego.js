@@ -78,7 +78,7 @@ this.bgMusic.play();
     this.physics.add.collider(this.manta,this.pipes,this.gameOver,null,this);
 
     // hitbox
-    this.debugGraphics = this.add.graphics();
+    
     this.physics.world.createDebugGraphic();
 
 }
