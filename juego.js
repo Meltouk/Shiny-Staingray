@@ -125,6 +125,8 @@ verificarPuntos(){
             }
         }
     });
+    this.debugGraphics.clear();
+    this.physics.world.drawDebug = false;
     
 }
 
