@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<!-- IMPORTANTE PARA CELULARES -->
+<meta name ="viewport" content ="width=device-width, initial-scale=1.0, user-scalable=no">
+
+<title>Shiny Stingray</title>
+
+<script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.js"></script>
+
+<style>
+
+@font-face {
+            font-family: 'BubbleBobble';
+            /* Asegúrate de poner la ruta correcta hacia tu archivo .ttf */
+            src: url('../img/Bubble Bobble.ttf') format('truetype'); 
+        }
+
+        /* 2. Clase para el truco de precarga */
+        .font-preload {
+            font-family: 'BubbleBobble';
+            position: absolute;
+            visibility: hidden;
+        }
+
+body{
+margin:0;
+padding:0;
+background:rgb(192, 247, 255);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+overflow:hidden;
+}
+
+/* Hace que el canvas se ajuste al celular */
+canvas{
+max-width:100%;
+height:auto;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<script src ="inicio.js"></script>
+<script src ="juego.js"></script>
+<script src ="gameover.js"></script>
+<script src ="main.js"></script>
+
+<div class="font-preload">.</div>
+
+</body>
+</html>
