@@ -125,8 +125,7 @@ verificarPuntos(){
             }
         }
     });
-    this.debugGraphics.clear();
-    this.physics.world.drawDebug = true;
+    
 }
 
 //  tubos creado
