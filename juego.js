@@ -79,7 +79,7 @@ this.bgMusic.play();
 
     // hitbox
     
-    this.physics.world.createDebugGraphic();
+   
 
 }
 
