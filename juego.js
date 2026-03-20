@@ -34,7 +34,7 @@ create(){
    this.manta.play("volar");
    this.manta.body.gravity.y = 900;
 
-   this.sonidoBark = this.sound.add("burbujas", {
+   this.sonido = this.sound.add("burbujas", {
     volume: 0.5}); // sonido de mantarraya
 
     // musica de fondo
@@ -80,7 +80,6 @@ this.bgMusic.play();
     // hitbox
     this.debugGraphics = this.add.graphics();
     this.physics.world.createDebugGraphic();
-   
 
 }
 
@@ -122,13 +121,12 @@ verificarPuntos(){
                 this.puntos++;
                 this.textoPuntos.setText(this.puntos);
 
-                this.sonidoBark.play({ volume: 0.5 });
+                this.sonido.play({ volume: 0.5 });
             }
         }
     });
     this.debugGraphics.clear();
     this.physics.world.drawDebug = false;
-    
 }
 
 //  tubos creado
